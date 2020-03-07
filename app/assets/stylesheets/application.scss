@@ -10,6 +10,28 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_self
+ *= require_tree .
  */
 
 @import "bootstrap";
+
+.background-img {
+	filter: brightness(50%);
+  width: 100vw;
+  height: 100vh;
+  background-image: url(image_path('background.jpg'));
+  /* Photo by freestocks.org from Pexels */
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
