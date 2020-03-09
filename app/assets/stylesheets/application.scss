@@ -11,27 +11,79 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require animate
  *= require_tree .
  */
 
 @import "bootstrap";
+@import "font-awesome";
 
-.background-img {
-	filter: brightness(50%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img.background {
+	filter: brightness(50%) grayscale(50%);
   width: 100vw;
   height: 100vh;
-  background-image: url(image_path('background.jpg'));
   /* Photo by freestocks.org from Pexels */
-  background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+.delay-3s {
+  animation-delay: 3s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-4s {
+  animation-delay: 4s;
+}
+
+.delay-5s {
+  animation-delay: 5s;
 }
 
 .title {
+  text-align: center;
   color: white;
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 70px;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  text-align: center;
+  margin-right: 50px !important;
+}
+
+.icon {
+  font-size: 70px;
+}
+
+.subtitle {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 25%;
   transform: translate(-50%, -50%);
 }

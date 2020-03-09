@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.5'
 
+#Font Awesome
+gem "font-awesome-rails"
+#Animate CSS
+gem "animate-rails"
 # JQuery
 gem 'jquery-rails'
 # Bootstrap
