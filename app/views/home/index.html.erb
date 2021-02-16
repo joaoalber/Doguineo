@@ -1,21 +1,28 @@
-<%= image_tag 'background1.jpg', alt: "Photo by Johann from Pexels", class: 'background' %>
-<div class="animated fadeIn delay-1s">
+<div class="dog-images">
+	<%= image_tag 'dog-img1.jpg', alt: "Photo by Jolanda from Pexels", class: 'dog-img1', size: "150x150" %>
+	<%= image_tag 'dog-img2.jpg', alt: "Foto de Nishant Aneja no Pexels", class: 'dog-img2', size: "150x150" %>
+	<%= image_tag 'dog-img3.jpg', alt: "Foto de Thorn Yang no Pexels", class: 'dog-img3', size: "150x150" %>
+	<%= image_tag 'dog-img4.jpg', alt: "Foto de Ellie Burgin no Pexels", class: 'dog-img4', size: "150x150" %>
+</div>
+
+<div>
 	<h1 class="title">Doguineo</h1>
 </div>
-<div class="animated fadeIn delay-2s">
-	<h2 class="subtitle">Seu melhor amigo procurando um lar</h3>
-</div>
+
+	<h2 class="subtitle">Seu <strong>melhor amigo</strong> procurando um <strong>lar</strong></h2>
+
 <div class="container-flex">
-	<div class="text animated fadeIn delay-3s">
+	<div class="text animated fadeIn delay-1s">
 		<%= fa_icon "paw", class: "icon" %>
 		<h3>Mais de cem milhões de cães são abandonados por ano</h3>
 	</div>
-	<div class="text animated fadeIn delay-4s">
+	<div class="text animated fadeIn delay-2s">
 		<%= fa_icon "heartbeat", class: "icon" %>
 		<h3>Todos os animais passaram pelo controle de Zoonoses</h3>
 	</div>
-	<div class="text animated fadeIn delay-5s">
+	<div class="text animated fadeIn delay-3s">
 		<%= fa_icon "home", class: "icon" %>
-		<h3>Ajude a achar um lar para essas coisinhas lindas</h3>
+		<h3>Ajude a achar um lar para essas fofurinhas lindas</h3>
 	</div>
 </div>
+<div class="btn btn-primary text animated fadeIn delay-4s">Faça a adoção consciente</div>
