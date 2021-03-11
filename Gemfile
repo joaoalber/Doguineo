@@ -3,10 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+# Devise
+gem 'devise'
+# Rubocop
+gem 'rubocop'
 # Font Awesome
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 # Animate CSS
-gem "animate-rails"
+gem 'animate-rails'
 # JQuery
 gem 'jquery-rails'
 # Bootstrap
